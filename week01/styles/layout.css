@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body with CSS Grid */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    text-align: center; /* Center-align the header content */
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem; /* Add padding for spacing */
+}
+
+/* Navigation with Flexbox */
+.navigation {
+    display: flex;
+    justify-content: space-between; /* Space out navigation items */
+    list-style: none;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    width: 100%; /* Ensure the navigation spans the full width */
+}
+
+.navigation li {
+    margin: 0 1rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
