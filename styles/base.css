@@ -1,0 +1,323 @@
+/* Reset and Base Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  margin: 0;
+}
+
+header h1 span.gold {
+  color: gold;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222831;
+  padding: 0.2rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  gap: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: normal;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #4CAF50;
+  border-radius: 5px;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* Card Containers */
+.card,
+.about,
+.resources {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+@media (min-width: 900px) {
+  .about,
+  .resources {
+    width: 48%;
+  }
+}
+
+/* Section Headers */
+.about h2,
+.resources h2 {
+  background-color: #0d5474;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.3rem;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+}
+
+/* About Section Layout */
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.about-flex img.profile {
+  width: 160px;
+  height: 265px;   /* Adjust this value until the image bottom aligns with the divider */
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+.about-flex > div {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-flex > div p {
+  margin-bottom: 0;
+}
+
+.about-text-with-divider {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-text-with-divider hr {
+  width: 100%;           /* Divider fills only the text column */
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 0.5rem 0 0 0;
+}
+
+.about-text-with-divider h3 {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin: 1rem 0 0.3rem 0;
+}
+
+/* Nigeria Description Layout */
+.flag-description {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.flag-description img {
+  width: 160px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.flag-description p {
+  margin: 0;
+ font-size: 1rem; /* Ensures long words break to the next line */
+}
+
+/* Flag Row Layout */
+.flag-row {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.flag-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically within the row */
+  height: 100%;
+}
+
+.flag-col img {
+  width: 160px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.flag-caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.flag-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.flag-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Divider and Location */
+hr {
+  margin: 0.5rem auto 1.5rem auto;
+  width: 60%;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+.about h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Web Resources Section */
+.resources {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.resources h2 {
+  background-color: #0d5474;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 1.3rem;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.resource-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.resources ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin: 0;
+  font-weight: bold;
+  flex-grow: 1; /* Ensures the ul takes up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the list */ /* Makes sure the ul takes up the full height */
+  height: 100%;
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+.resources a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* Link Colors */
+.purple-link {
+  color: purple;
+}
+
+.blue-link {
+  color: #007BFF;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+#lastModification {
+  font-family: monospace;
+  color: #fcdc58;
+  margin-top: 0.4rem;
+}
+
+/* Section Title Line */
+.section-title-line {
+  position: relative;
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.section-title-line hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 0.5rem auto 0 auto;
+  width: 60%;
+}
+
+.section-title-line h3 {
+  position: static;
+  background: none;
+  padding: 0;
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+  color: #003366;
+  font-weight: bold;
+}
