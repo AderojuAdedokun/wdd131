@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Acme, Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  margin: 1rem auto;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 320px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column; /* Stack input and button vertically */
+  gap: 0.5rem; /* Add spacing between input and button */
+}
+
+input {
+  height: 2.5rem; /* Set a consistent height */
+  padding: 0.5rem; /* Add padding inside the input */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  box-sizing: border-box; /* Include padding and border in the height */
+}
+
+button {
+  height: 2.5rem; /* Match the height of the input */
+  padding: 0 1rem; /* Add horizontal padding */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.delete {
+  width: fit-content;
+}
+
+.input {
+  display: flex;
+  gap: 1rem;
+}
+
+.list {
+  padding: 0.5rem;
+}
+
+ul {
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  background-color: white;
+}
+
+li button {
+  background-color: #ff4d4d; /* Red background for delete button */
+  color: white; /* White text for delete button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+@media only screen and (min-width: 32.5em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 320px;
+  }
+}
