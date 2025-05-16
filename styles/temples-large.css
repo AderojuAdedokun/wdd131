@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  #menu {
+    display: none; /* Hide hamburger menu */
+  }
+
+  nav {
+    display: block;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation li {
+    margin: 0 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
