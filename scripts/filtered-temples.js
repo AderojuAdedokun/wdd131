@@ -77,12 +77,14 @@ document.addEventListener("DOMContentLoaded", function() {
   renderTemples(temples);
 
   // Hook up filter buttons
-  const buttons = document.querySelectorAll(".navigation button");
-  buttons.forEach(btn => {
-    btn.addEventListener("click", function() {
-      buttons.forEach(b => b.classList.remove("active"));
-      this.classList.add("active");
-      filterTemples(this.dataset.filter);
+  const links = document.querySelectorAll(".navigation a");
+  links.forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const filterValue = link.getAttribute("data-filter");
+        filterTemples(filterValue);
+        links.forEach(l => l.classList.remove("active"));
+        links.classList.add("active");
     });
   });
 
