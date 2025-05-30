@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Temple Album - Aderoju Adedokun. Explore beautiful temples from around the world.">
+  <meta name="description" content="Temple Album - Aderoju Adedokun. Explore beautiful temples from around the world in this temple album.">
   <meta name="author" content="Aderoju Adedokun">
-  <title>Temple Album</title>
+  <title>Temple Album - Explore Beautiful Temples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/filtered-temples.css">
   <link rel="stylesheet" href="styles/filtered-temples-large.css">
   <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Temple Album</h1>
-    <button id="menu" aria-label="Toggle Menu"></button>
-    <nav>
-      <ul class="navigation">
-        <li><button data-filter="all">Home</button></li>
-        <li><button data-filter="old">Old</button></li>
-        <li><button data-filter="new">New</button></li>
-        <li><button data-filter="large">Large</button></li>
-        <li><button data-filter="small">Small</button></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h2 id="section-title">Home</h2>
-    <section id="temple-container" class="gallery">
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple Album</h1>
+        <h2 id="section-title">Home</h2>
+        <section id="temple-container" class="gallery">
       <!-- JS will inject temple cards here -->
     </section>
   </main>

@@ -20,7 +20,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-h1 { font-size: 1.5rem; }
+
+h1 { font-size: 1.5rem; 
+}
+
 #menu {
   font-size: 1.5rem;
   background: none;
@@ -28,16 +31,29 @@ h1 { font-size: 1.5rem; }
   color: white;
   cursor: pointer;
 }
-#menu::before { content: "☰"; }
-#menu.open::before { content: "✖"; }
-nav { display: none; }
-nav.open { display: block; }
+
+#menu::before { content: "☰"; 
+}
+
+#menu.open::before { content: "✖"; 
+}
+
+nav { display: none; 
+}
+
+nav.open { display: block;
+}
+
 .navigation {
   list-style: none;
   background-color: #4a148c;
 }
-.navigation li { text-align: center; }
-.navigation button {
+
+.navigation li { 
+  text-align: center; 
+}
+
+.navigation a {
   display: block;
   width: 100%;
   padding: 1rem;
@@ -46,8 +62,8 @@ nav.open { display: block; }
   color: white;
   cursor: pointer;
 }
-.navigation button:hover,
-.navigation button.active {
+
+.navigation a:hover,.navigation button.active {
   background-color: #6a1b9a;
 }
 
@@ -88,7 +104,7 @@ main h2 {
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   justify-items: center;
 }
