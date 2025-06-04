@@ -15,8 +15,11 @@ main {
   padding: 2rem;
 }
 
-h1 {
+h1, h2, legend, .submit-btn {
   font-family: 'Montserrat', Arial, sans-serif;
+}
+
+h1 {
   color: #e75480;
   text-align: center;
   margin-bottom: 2rem;
@@ -39,6 +42,7 @@ input[type="text"], input[type="date"], select, textarea {
   border-radius: 0.4rem;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 textarea {
@@ -52,9 +56,9 @@ textarea {
 
 .rating-group {
   display: flex;
-  gap: 0.5rem;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  gap: 0.2rem;
 }
 
 .rating-group input[type="radio"] {
@@ -62,7 +66,7 @@ textarea {
 }
 
 .rating-group label {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #ccc;
   cursor: pointer;
   transition: color 0.2s;
@@ -91,9 +95,9 @@ input[type="checkbox"] {
   border-radius: 0.4rem;
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
-  font-family: 'Montserrat', Arial, sans-serif;
   cursor: pointer;
   transition: background 0.2s;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .submit-btn:hover {
