@@ -11,14 +11,16 @@
   <script src="scripts/form.js" defer></script>
 </head>
 <body>
+  <header>
+    <h1>Product Review </h1>
+  </header>
   <main>
-    <h1>Product Review Form</h1>
     <form method="get" action="review.html" id="reviewForm" autocomplete="on">
       <!-- Product Name -->
       <div class="form-group">
         <label for="productName">Product Name<span class="required">*</span></label>
         <select id="productName" name="productName" required>
-          <option value="" disabled selected>Select a Product ...</option>
+          <option value="" disabled selected>Choose a Product ...</option>
           <!-- Options will be populated by JS -->
         </select>
       </div>
@@ -48,41 +50,37 @@
 
       <!-- Useful Features -->
       <fieldset class="form-group">
-        <legend>Useful Features (check all that apply)</legend>
+        <legend>Which features did you find useful in the product? <span class="features-label">(check all that apply)</span></legend>
         <div class="checkbox-group">
-          <input type="checkbox" id="feature1" name="features" value="Easy to Use">
-          <label for="feature1">Easy to Use</label>
-          <input type="checkbox" id="feature2" name="features" value="High Performance">
-          <label for="feature2">High Performance</label>
-          <input type="checkbox" id="feature3" name="features" value="Durable">
-          <label for="feature3">Durable</label>
-          <input type="checkbox" id="feature4" name="features" value="Affordable">
-          <label for="feature4">Affordable</label>
-          <input type="checkbox" id="feature5" name="features" value="Great Support">
-          <label for="feature5">Great Support</label>
+          <label><input type="checkbox" id="feature1" name="features" value="Easy to Use"> Easy to Use</label>
+          <label><input type="checkbox" id="feature2" name="features" value="High Performance"> High Performance</label>
+          <label><input type="checkbox" id="feature3" name="features" value="Durable"> Durable</label>
+          <label><input type="checkbox" id="feature4" name="features" value="Affordable"> Affordable</label>
+          <label><input type="checkbox" id="feature5" name="features" value="Great Support"> Great Support</label>
         </div>
       </fieldset>
 
       <!-- Written Review -->
       <div class="form-group">
-        <label for="reviewText">Written Review</label>
+        <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
         <textarea id="reviewText" name="reviewText" rows="4" placeholder="Share your experience..."></textarea>
       </div>
 
       <!-- User Name -->
       <div class="form-group">
-        <label for="userName">Your Name</label>
-        <input type="text" id="userName" name="userName" placeholder="Optional">
+        <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+        <input type="text" id="userName" name="userName">
       </div>
 
       <!-- Submit Button -->
       <div class="form-group">
-        <input type="submit" value="Submit" class="submit-btn">
+        <button type="submit" class="submit-btn">Post Review</button>
       </div>
     </form>
   </main>
   <footer>
-    <p>&copy; 2024 | Product Review | Aderoju Adedokun</p>
-  </footer>
+  <p>&copy; <span id="currentyear"></span> 🎀 Aderoju Adedokun 🎀 <br>Nigeria  </p>
+  <p id="lastModification"></p>
+</footer>
 </body>
 </html>
